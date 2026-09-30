@@ -153,7 +153,7 @@
   if ('serviceWorker' in navigator) {
     // CRITICAL: You must use the exact absolute folder path of your GitHub subfolder
     // Change "your-username" and "your-repository-name" to match your live GitHub URL
-    navigator.serviceWorker.register('/ovo3/1.4.5/sw.js', { scope: '/ovo3/' })
+    navigator.serviceWorker.register('/ovo3/sw.js', { scope: '/ovo3/' })
       .then(() => console.log("iPad Offline Mode Ready!"))
       .catch(err => console.error("Offline setup failed", err));
   }
